@@ -1,5 +1,6 @@
 {
   "name": "Arch Linux Kernel Build",
-  "image": "mcr.microsoft.com/devcontainers/base:arch",
+  "image": "archlinux/archlinux:latest",
+  "remoteUser": "root",
   "postCreateCommand": "pacman -Syu --noconfirm && pacman -S --noconfirm base-devel git bc cpio gettext libelf pahole perl python rust rust-bindgen rust-src clang llvm lld tar xz zstd"
 }
